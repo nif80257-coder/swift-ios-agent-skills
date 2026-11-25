@@ -4,7 +4,7 @@
 [Agent Skills](https://agentskills.io): كل مهارة مجلد فيه `SKILL.md` بترويسة
 `name` و`description`، وملفات مراجع اختيارية داخل `references/` أو `reference/`.
 
-المجموع: **79 مهارة**.
+المجموع: **85 مهارة**.
 
 ## التركيب
 
@@ -49,6 +49,8 @@
 | `swiftui-webkit` | WebView/WebPage، سياسات التنقّل، تنفيذ JavaScript، محتوى محلي ومخططات URL (متصرّف التطبيق) |
 | `swift-charts` | رسوم Bar/Line/Area/Pie/3D، التحديد والتمرير والتحاور (شاشة الإحصاءات) |
 | `swiftui-whats-new-27` | جديد SwiftUI في SDK 27: ماكرو `@State`، `reorderable()`، `@ContentBuilder`، الشريط، `AsyncImage(request:)` |
+| `swiftui-specialist` | قواعد SwiftUI المرجعية من Apple: تدفّق البيانات، Environment، `ForEach`، التعديلات، وsoft-deprecated APIs |
+| `swiftui-performance` | أداء العرض: تقليل تحديثات العروض، layout thrash، القياس بـInstruments، والتعلّق (hangs) |
 | `uikit-expert` | UIKit الحديث: Auto Layout، collection views المركّبة، الأداء، الذاكرة، والتنقّل ودمج SwiftUI |
 
 ### Swift وSwiftData
@@ -99,6 +101,10 @@
 | `coreml` | Core ML: تحميل النماذج، التنبؤ، وحدات الحساب، و`VNCoreMLRequest` |
 | `vision-framework` | Vision: OCR، الباركود، الوجوه، والتتبّع + `DataScannerViewController` |
 | `photokit` | PhotoKit والكاميرا: `PhotosPicker`، `AVCaptureSession`، وتحميل الصور وتخزينها |
+| `cryptokit` | CryptoKit: SHA-2/3، HMAC، AES-GCM، ChaChaPoly، HPKE، ML-KEM/ML-DSA، P256، وSecure Enclave |
+| `device-interaction` | التحقّق من سلوك التطبيق على الجهاز/المحاكي: لقطات، UI hierarchy، ولمسات |
+| `audit-xcode-security-settings` | تدقيق إعدادات أمان Xcode تدريجياً: تحذيرات المترجم، static analyzer، وEnhanced Security |
+| `uikit-app-modernization` | تحديث تطبيقات UIKit للنوافذ المتعددة: دورة حياة الـscene، `UIScreen`، والمساحات الآمنة |
 
 ### التصميم والأدوات
 | المهارة | الغرض |
@@ -154,7 +160,7 @@ mkdir -p .claude && cp -R .claude/skills /path/to/project/.claude/
   [dpearson2699/swift-ios-skills](https://github.com/dpearson2699/swift-ios-skills) بترخيص
   PolyForm Perimeter 1.0.0.
 - `cloudkit`, `swift-language`, `coreml`, `vision-framework`, `photokit`, `device-integrity`,
-  `ios-simulator`, `ios-memgraph-analysis` — كذلك من
+  `ios-simulator`, `ios-memgraph-analysis`, `cryptokit`, `swiftui-performance` — كذلك من
   [dpearson2699/swift-ios-skills](https://github.com/dpearson2699/swift-ios-skills) بترخيص
   PolyForm Perimeter 1.0.0.
 - `writing-for-interfaces` — من [andrewgleave/skills](https://github.com/andrewgleave/skills)، MIT (`LICENSE` مرفق).
@@ -162,7 +168,9 @@ mkdir -p .claude && cp -R .claude/skills /path/to/project/.claude/
 - `swiftdata-testing` — من [akshaypimprikar/ios-swiftdata-testing-agent-skill](https://github.com/akshaypimprikar/ios-swiftdata-testing-agent-skill)، MIT.
 - `ios-code-audit` — من [jazzychad/ios-code-audit](https://github.com/jazzychad/ios-code-audit)، MIT.
 - `uikit-expert` — من [ivan-magda/uikit-expert-skill](https://github.com/ivan-magda/uikit-expert-skill)، MIT.
-- `swiftui-whats-new-27`, `test-modernizer` — من [superagents-lab/xcode27-skills](https://github.com/superagents-lab/xcode27-skills)؛
+- `swiftui-whats-new-27`, `test-modernizer`, `swiftui-specialist`, `device-interaction`,
+  `audit-xcode-security-settings`, `uikit-app-modernization` — من
+  [superagents-lab/xcode27-skills](https://github.com/superagents-lab/xcode27-skills)؛
   المستودع بلا ملف ترخيص، والمحتوى منشور للاستخدام العام (راجع README قبل إعادة التوزيع).
 
 هذا الفهرس هو نسخة تجميعية للاستخدام الشخصي، وليس إصداراً رسمياً من أي من المصادر أعلاه.
