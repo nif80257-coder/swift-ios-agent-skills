@@ -4,7 +4,7 @@
 [Agent Skills](https://agentskills.io): كل مهارة مجلد فيه `SKILL.md` بترويسة
 `name` و`description`، وملفات مراجع اختيارية داخل `references/` أو `reference/`.
 
-المجموع: **57 مهارة**.
+المجموع: **64 مهارة**.
 
 ## التركيب
 
@@ -78,6 +78,13 @@
 | `authentication` | Sign in with Apple، المفاتيح (passkeys)، الحماية بالبصمة، إدارة الاعتمادات |
 | `metrickit` | MetricKit: تقارير الأداء والانهيارات في الإنتاج وقمع الأعطال |
 | `app-store-review` | إرشادات المراجعة، PrivacyInfo.xcprivacy، منع الرفض، وقوائم الفحص |
+| `debugging-instruments` | LLDB وInstruments و`os_signpost` وترميز الانهيارات |
+| `swiftlint` | SwiftLint: الإعداد، القواعد المخصصة، الـbaselines، والـCI |
+| `tipkit` | TipKit: تلميحات الميزات وقواعدها وأحداثها ومجموعاتها |
+| `speech-recognition` | SpeechAnalyzer/SFSpeechRecognizer: بحث صوتي عربي وتفريغ الصوت |
+| `natural-language` | NLTokenizer/NLTagger: تطبيع النص، كشف اللغة، الترجمة |
+| `shareplay-activities` | GroupActivity/GroupSession: مشاهدة جماعية متزامنة (Party) |
+| `swift-api-design-guidelines` | اصطلاحات التسمية والتوثيق ومعايير تصميم الـAPI |
 
 ### التصميم والأدوات
 | المهارة | الغرض |
@@ -125,6 +132,10 @@ mkdir -p .claude && cp -R .claude/skills /path/to/project/.claude/
 - `swiftui-patterns`, `swiftui-gestures`, `swiftui-webkit`, `swift-charts`, `swift-testing`,
   `swift-architecture`, `storekit`, `push-notifications`, `swift-security`, `authentication`,
   `metrickit`, `app-store-review`, `app-store-optimization` — أيضاً من
+  [dpearson2699/swift-ios-skills](https://github.com/dpearson2699/swift-ios-skills) بترخيص
+  PolyForm Perimeter 1.0.0.
+- `debugging-instruments`, `swiftlint`, `tipkit`, `speech-recognition`, `natural-language`,
+  `shareplay-activities`, `swift-api-design-guidelines` — كذلك من
   [dpearson2699/swift-ios-skills](https://github.com/dpearson2699/swift-ios-skills) بترخيص
   PolyForm Perimeter 1.0.0.
 
