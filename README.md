@@ -4,7 +4,7 @@
 [Agent Skills](https://agentskills.io): كل مهارة مجلد فيه `SKILL.md` بترويسة
 `name` و`description`، وملفات مراجع اختيارية داخل `references/` أو `reference/`.
 
-المجموع: **64 مهارة**.
+المجموع: **79 مهارة**.
 
 ## التركيب
 
@@ -48,6 +48,8 @@
 | `swiftui-gestures` | Tap/Drag/Magnify/Rotate، التركيب، GestureState، وحل تعارض الإيماءات (أساس إيماءات المشغّل) |
 | `swiftui-webkit` | WebView/WebPage، سياسات التنقّل، تنفيذ JavaScript، محتوى محلي ومخططات URL (متصرّف التطبيق) |
 | `swift-charts` | رسوم Bar/Line/Area/Pie/3D، التحديد والتمرير والتحاور (شاشة الإحصاءات) |
+| `swiftui-whats-new-27` | جديد SwiftUI في SDK 27: ماكرو `@State`، `reorderable()`، `@ContentBuilder`، الشريط، `AsyncImage(request:)` |
+| `uikit-expert` | UIKit الحديث: Auto Layout، collection views المركّبة، الأداء، الذاكرة، والتنقّل ودمج SwiftUI |
 
 ### Swift وSwiftData
 | المهارة | الغرض |
@@ -59,6 +61,10 @@
 | `swiftdata-migration` | ترحيل القوائم والسجلّات من UserDefaults إلى SwiftData |
 | `swift-architecture` | اختيار/مراجعة/ترحيل المعمارية: MV، MVVM، MVI، TCA، Clean، Coordinator |
 | `swift-testing` | Swift Testing: @Test، @Suite، #expect، الاختبارات المُعاملة والمزاح |
+| `test-modernizer` | ترحيل الاختبارات من XCTest إلى Swift Testing وتحديث الصياغات |
+| `swift-language` | لغة Swift الحديثة: تعبيرات if/switch، typed throws، property wrappers، `some`/`any`، Regex، وواجهات التجميع |
+| `swiftdata-pro` | قواعد SwiftData الصارمة: الفهارس، `#Predicate`، الوراثة بين النماذج، وCloudKit |
+| `swiftdata-testing` | اختبار SwiftData: `ModelContainer` في الذاكرة، `@ModelActor`، مستودعات وهمية، وقيم Decimal |
 
 ### iOS الهندسية والمنصّة
 | المهارة | الغرض |
@@ -85,6 +91,14 @@
 | `natural-language` | NLTokenizer/NLTagger: تطبيع النص، كشف اللغة، الترجمة |
 | `shareplay-activities` | GroupActivity/GroupSession: مشاهدة جماعية متزامنة (Party) |
 | `swift-api-design-guidelines` | اصطلاحات التسمية والتوثيق ومعايير تصميم الـAPI |
+| `cloudkit` | CloudKit وiCloud: CKRecord، الاستعلامات، CKSyncEngine، وSwiftData مع CloudKit |
+| `device-integrity` | DeviceCheck وApp Attest: التحقق من الجهاز وحماية الـAPI (العضوية والاشتراكات) |
+| `ios-simulator` | simctl: التثبيت والتشغيل، push والموقع، اللقطات، الحاويات، والسجلات |
+| `ios-memgraph-analysis` | تحليل `.memgraph`: تسريب الذاكرة، مسارات الملكية، ونمو الكومة |
+| `ios-code-audit` | تدقيق كامل لكود Swift: أخطاء، كود ميت، تكرار، concurrency، وأداء في تقرير واحد |
+| `coreml` | Core ML: تحميل النماذج، التنبؤ، وحدات الحساب، و`VNCoreMLRequest` |
+| `vision-framework` | Vision: OCR، الباركود، الوجوه، والتتبّع + `DataScannerViewController` |
+| `photokit` | PhotoKit والكاميرا: `PhotosPicker`، `AVCaptureSession`، وتحميل الصور وتخزينها |
 
 ### التصميم والأدوات
 | المهارة | الغرض |
@@ -95,6 +109,7 @@
 | `gemini-image-generation` | توليد صور عبر Gemini 3 Pro / 2.5 Flash — يحتاج `GEMINI_API_KEY` |
 | `app-store-optimization` | ASO: بحث الكلمات، وصف المتجر، لقطات الشاشة، الصفحات المخصصة واختبار A/B |
 | `find-skills` | البحث عن مهارات قابلة للتثبيت عند الحاجة لوظيفة جديدة |
+| `writing-for-interfaces` | صياغة نصوص الواجهة: رسائل الأخطاء، الأزرار، الحالات الفارغة، والتنبيهات |
 
 ## التركيب في مشروع
 
@@ -138,5 +153,16 @@ mkdir -p .claude && cp -R .claude/skills /path/to/project/.claude/
   `shareplay-activities`, `swift-api-design-guidelines` — كذلك من
   [dpearson2699/swift-ios-skills](https://github.com/dpearson2699/swift-ios-skills) بترخيص
   PolyForm Perimeter 1.0.0.
+- `cloudkit`, `swift-language`, `coreml`, `vision-framework`, `photokit`, `device-integrity`,
+  `ios-simulator`, `ios-memgraph-analysis` — كذلك من
+  [dpearson2699/swift-ios-skills](https://github.com/dpearson2699/swift-ios-skills) بترخيص
+  PolyForm Perimeter 1.0.0.
+- `writing-for-interfaces` — من [andrewgleave/skills](https://github.com/andrewgleave/skills)، MIT (`LICENSE` مرفق).
+- `swiftdata-pro` — من [twostraws/SwiftData-Agent-Skill](https://github.com/twostraws/SwiftData-Agent-Skill)، MIT.
+- `swiftdata-testing` — من [akshaypimprikar/ios-swiftdata-testing-agent-skill](https://github.com/akshaypimprikar/ios-swiftdata-testing-agent-skill)، MIT.
+- `ios-code-audit` — من [jazzychad/ios-code-audit](https://github.com/jazzychad/ios-code-audit)، MIT.
+- `uikit-expert` — من [ivan-magda/uikit-expert-skill](https://github.com/ivan-magda/uikit-expert-skill)، MIT.
+- `swiftui-whats-new-27`, `test-modernizer` — من [superagents-lab/xcode27-skills](https://github.com/superagents-lab/xcode27-skills)؛
+  المستودع بلا ملف ترخيص، والمحتوى منشور للاستخدام العام (راجع README قبل إعادة التوزيع).
 
 هذا الفهرس هو نسخة تجميعية للاستخدام الشخصي، وليس إصداراً رسمياً من أي من المصادر أعلاه.
