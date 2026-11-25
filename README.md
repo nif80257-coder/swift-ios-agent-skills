@@ -4,7 +4,7 @@
 [Agent Skills](https://agentskills.io): كل مهارة مجلد فيه `SKILL.md` بترويسة
 `name` و`description`، وملفات مراجع اختيارية داخل `references/` أو `reference/`.
 
-المجموع: **41 مهارة**.
+المجموع: **44 مهارة**.
 
 ## التركيب
 
@@ -43,6 +43,7 @@
 | `swiftui-iphone-duo` | iPhone Duo القابل للطي: نوافذ متغيرة، الأشرطة، الحافة |
 | `ios-ui-fluidity` | لا تحليل ولا فك ترميز على الخيط الرئيسي، صور مصغّرة، إلغاء البحث |
 | `instant-search-fluency` | فهرس بحث محلي مطبّع، إجابة في إطار واحد، طيّ الحروف العربية |
+| `swiftui-microinteractions` | حركات دقيقة بأسلوب Animo: فيزياء spring، CoreHaptics، زجاج، ورسم SF Symbols 7 |
 
 ### Swift وSwiftData
 | المهارة | الغرض |
@@ -71,6 +72,8 @@
 |---|---|
 | `anti-ui-slop` | منع الواجهات العامة: عقد تصميم، حالات مطلوبة، بوابة إنهاء |
 | `impeccable` | تصميم/نقد/صقل واجهات الويب والتطبيقات وأنظمة التصميم |
+| `app-paywall-pilot` | تصميم وتدقيق paywall متوافق مع App Store: الاشتراكات، التجارب، التسعير، LTV |
+| `gemini-image-generation` | توليد صور عبر Gemini 3 Pro / 2.5 Flash — يحتاج `GEMINI_API_KEY` |
 | `find-skills` | البحث عن مهارات قابلة للتثبيت عند الحاجة لوظيفة جديدة |
 
 ## التركيب في مشروع
@@ -103,5 +106,8 @@ mkdir -p .claude && cp -R .claude/skills /path/to/project/.claude/
   `ios-ui-fluidity`, `kmp-ktor`, `kmp-network-layer`, `ktor-client-performance`,
   `ios-app-intents`, `swiftdata-migration`, `xcode-project-setup`, `app-intents` —
   مهارات خاصة بمشاريع هذا الجهاز.
+- `swiftui-microinteractions` — من [iAmVishal16/swiftui-microinteractions](https://github.com/iAmVishal16/swiftui-microinteractions)، MIT.
+- `app-paywall-pilot` — من [Nikolai-Iakubovskii/app-paywall-pilot](https://github.com/Nikolai-Iakubovskii/app-paywall-pilot)، MIT.
+- `gemini-image-generation` — من [chirag2653/free-ai-agent-skills](https://github.com/chirag2653/free-ai-agent-skills)، MIT (سكربت التشغيل بايثون ويتطلب مفتاح Gemini).
 
 هذا الفهرس هو نسخة تجميعية للاستخدام الشخصي، وليس إصداراً رسمياً من أي من المصادر أعلاه.
