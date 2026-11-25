@@ -4,7 +4,7 @@
 [Agent Skills](https://agentskills.io): كل مهارة مجلد فيه `SKILL.md` بترويسة
 `name` و`description`، وملفات مراجع اختيارية داخل `references/` أو `reference/`.
 
-المجموع: **44 مهارة**.
+المجموع: **57 مهارة**.
 
 ## التركيب
 
@@ -44,6 +44,10 @@
 | `ios-ui-fluidity` | لا تحليل ولا فك ترميز على الخيط الرئيسي، صور مصغّرة، إلغاء البحث |
 | `instant-search-fluency` | فهرس بحث محلي مطبّع، إجابة في إطار واحد، طيّ الحروف العربية |
 | `swiftui-microinteractions` | حركات دقيقة بأسلوب Animo: فيزياء spring، CoreHaptics، زجاج، ورسم SF Symbols 7 |
+| `swiftui-patterns` | @Observable وملكية الحالة، تركيب العروض، تحميل async، وصقل التصميم |
+| `swiftui-gestures` | Tap/Drag/Magnify/Rotate، التركيب، GestureState، وحل تعارض الإيماءات (أساس إيماءات المشغّل) |
+| `swiftui-webkit` | WebView/WebPage، سياسات التنقّل، تنفيذ JavaScript، محتوى محلي ومخططات URL (متصرّف التطبيق) |
+| `swift-charts` | رسوم Bar/Line/Area/Pie/3D، التحديد والتمرير والتحاور (شاشة الإحصاءات) |
 
 ### Swift وSwiftData
 | المهارة | الغرض |
@@ -53,6 +57,8 @@
 | `swift-formatstyle` | تنسيق الأرقام والعملات والتواريخ والمدد حسب اللغة |
 | `swiftdata` | نماذج SwiftData، الوراثة، العلاقات متعددة الأشكال |
 | `swiftdata-migration` | ترحيل القوائم والسجلّات من UserDefaults إلى SwiftData |
+| `swift-architecture` | اختيار/مراجعة/ترحيل المعمارية: MV، MVVM، MVI، TCA، Clean، Coordinator |
+| `swift-testing` | Swift Testing: @Test، @Suite، #expect، الاختبارات المُعاملة والمزاح |
 
 ### iOS الهندسية والمنصّة
 | المهارة | الغرض |
@@ -66,6 +72,12 @@
 | `app-intents` | Siri وShortcuts وSpotlight وApple Intelligence |
 | `ios-app-intents` | تعريض التشغيل والبحث لـSiri وAppEntity وApp Shortcuts |
 | `xcode-project-setup` | تعديل `.pbxproj` بأمان: حزم Swift وربط الملفات |
+| `storekit` | StoreKit 2: المنتجات، الاشتراكات، SubscriptionStoreView، التحقق من المعاملات (العضوية) |
+| `push-notifications` | UNUserNotificationCenter، APNs، الإشعارات الغنية والصامتة، الردود والخدمة |
+| `swift-security` | Keychain، CryptoKit، Secure Enclave، ربط الشهادات، تخزين بيانات Trakt والاعتمادات |
+| `authentication` | Sign in with Apple، المفاتيح (passkeys)، الحماية بالبصمة، إدارة الاعتمادات |
+| `metrickit` | MetricKit: تقارير الأداء والانهيارات في الإنتاج وقمع الأعطال |
+| `app-store-review` | إرشادات المراجعة، PrivacyInfo.xcprivacy، منع الرفض، وقوائم الفحص |
 
 ### التصميم والأدوات
 | المهارة | الغرض |
@@ -74,6 +86,7 @@
 | `impeccable` | تصميم/نقد/صقل واجهات الويب والتطبيقات وأنظمة التصميم |
 | `app-paywall-pilot` | تصميم وتدقيق paywall متوافق مع App Store: الاشتراكات، التجارب، التسعير، LTV |
 | `gemini-image-generation` | توليد صور عبر Gemini 3 Pro / 2.5 Flash — يحتاج `GEMINI_API_KEY` |
+| `app-store-optimization` | ASO: بحث الكلمات، وصف المتجر، لقطات الشاشة، الصفحات المخصصة واختبار A/B |
 | `find-skills` | البحث عن مهارات قابلة للتثبيت عند الحاجة لوظيفة جديدة |
 
 ## التركيب في مشروع
@@ -109,5 +122,10 @@ mkdir -p .claude && cp -R .claude/skills /path/to/project/.claude/
 - `swiftui-microinteractions` — من [iAmVishal16/swiftui-microinteractions](https://github.com/iAmVishal16/swiftui-microinteractions)، MIT.
 - `app-paywall-pilot` — من [Nikolai-Iakubovskii/app-paywall-pilot](https://github.com/Nikolai-Iakubovskii/app-paywall-pilot)، MIT.
 - `gemini-image-generation` — من [chirag2653/free-ai-agent-skills](https://github.com/chirag2653/free-ai-agent-skills)، MIT (سكربت التشغيل بايثون ويتطلب مفتاح Gemini).
+- `swiftui-patterns`, `swiftui-gestures`, `swiftui-webkit`, `swift-charts`, `swift-testing`,
+  `swift-architecture`, `storekit`, `push-notifications`, `swift-security`, `authentication`,
+  `metrickit`, `app-store-review`, `app-store-optimization` — أيضاً من
+  [dpearson2699/swift-ios-skills](https://github.com/dpearson2699/swift-ios-skills) بترخيص
+  PolyForm Perimeter 1.0.0.
 
 هذا الفهرس هو نسخة تجميعية للاستخدام الشخصي، وليس إصداراً رسمياً من أي من المصادر أعلاه.
